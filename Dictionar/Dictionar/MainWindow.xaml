@@ -9,54 +9,69 @@
         ResizeMode="NoResize">
     <Grid>
         <Grid x:Name="Main">
-            <Button x:Name="DictMain" Content="Dictionary" Grid.Column="1" HorizontalAlignment="Center" Margin="0,100,0,0" VerticalAlignment="Top" Width="260" Height="45" Click="DictMain_Click"/>
-            <Button x:Name="GameMain" Content="Word Game" Grid.Column="1" HorizontalAlignment="Center" Margin="0,180,0,0" VerticalAlignment="Top" Width="260" Height="45" Click="GameMain_Click"/>
-            <Button x:Name="AdminMain" Content="Administrator mode" Grid.Column="1" HorizontalAlignment="Center" Margin="0,260,0,0" VerticalAlignment="Top" Width="260" Height="45" Click="AdminMain_Click"/>
+            <Button x:Name="DictMain" Content="Dictionary" Grid.Column="1" HorizontalAlignment="Center" Margin="0,100,0,0" VerticalAlignment="Top" Width="260" Height="45" FontSize="15" Click="DictMain_Click"/>
+            <Button x:Name="GameMain" Content="Word Game" Grid.Column="1" HorizontalAlignment="Center" Margin="0,180,0,0" VerticalAlignment="Top" Width="260" Height="45" FontSize="15" Click="GameMain_Click"/>
+            <Button x:Name="AdminMain" Content="Administrator mode" Grid.Column="1" HorizontalAlignment="Center" Margin="0,260,0,0" VerticalAlignment="Top" Width="260" FontSize="15" Height="45" Click="AdminMain_Click"/>
         </Grid>
         <Grid x:Name="Admin" Visibility="Hidden">
             <Label Content="Administrator" Margin="340,10,322,349" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="50" Height="82" Width="326"/>
 
-            <Label Content="Select a category:&#x9;&#x9;&#x9;&#x9;&#x9;       and/or" Margin="31,115,510,283" FontSize="15" HorizontalAlignment="Center" Width="453"/>
-            <ComboBox x:Name="AdminComboCat" HorizontalAlignment="Center" Margin="165,115,635,0" VerticalAlignment="Top" Width="195" IsEditable="True" Height="30" FontSize="15"/>
+            <Label Content="Select a category:" Margin="26,115,839,283" FontSize="15" HorizontalAlignment="Center" Width="129"/>
+            <ComboBox x:Name="AdminComboCat" HorizontalAlignment="Left" Margin="160,115,0,0" VerticalAlignment="Top" Width="195" IsEditable="True" Height="30" FontSize="15"/>
 
-            <Label Content="Search for a word:" Margin="489,115,371,283" FontSize="15" HorizontalAlignment="Center" Width="134"/>
-            <ComboBox Name="AdminCombo" HorizontalAlignment="Center" Margin="628,115,28,0" VerticalAlignment="Top" Width="338" IsEditable="True" Height="30" FontSize="15"/>
+            <Label Content="and/or" Margin="406,115,522,280" FontSize="15"/>
+            <Label Content="Search for a word:" Margin="484,115,376,283" FontSize="15" HorizontalAlignment="Center" Width="134"/>
+            <ComboBox Name="AdminCombo" HorizontalAlignment="Left" Margin="623,115,0,0" VerticalAlignment="Top" Width="338" IsEditable="True" Height="30" FontSize="15"/>
 
             <Label Content="Definition:" Margin="30,163,869,237" FontSize="15"/>
-            <TextBox Name="AdminText" HorizontalAlignment="Left" Height="180" Margin="30,204,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="457" IsReadOnly="False"/>
+            <TextBox Name="AdminText" HorizontalAlignment="Left" Height="180" Margin="25,204,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="457" IsReadOnly="False"/>
 
-            <Label Content="Image:" Margin="509,168,419,227" FontSize="15"/>
-            <Image Name="AdminImage" HorizontalAlignment="Left" Height="180" Margin="509,204,0,0" VerticalAlignment="Top" Width="457"/>
+            <Label Content="Image:" Margin="504,168,424,227" FontSize="15"/>
+            <Image Name="AdminImage" HorizontalAlignment="Left" Height="180" Margin="504,204,0,0" VerticalAlignment="Top" Width="457"/>
 
             <Button x:Name="BackAdmin" Content="Back to Main Menu" HorizontalAlignment="Left" Height="25" Margin="10,10,0,0" VerticalAlignment="Top" Width="115" Click="BackAdmin_Click"/>
 
-            <Button x:Name="UpdateDefAdmin" Content="Update Definition" HorizontalAlignment="Left" Margin="385,399,0,0" VerticalAlignment="Top" Width="102"/>
+            <Button x:Name="UpdateDefAdmin" Content="Update Definition" HorizontalAlignment="Left" Margin="380,399,0,0" VerticalAlignment="Top" Width="102"/>
 
-            <Button x:Name="ChooseImageAdmin" Content="Choose Image" HorizontalAlignment="Left" Margin="738,399,0,0" VerticalAlignment="Top" Width="102"/>
-            <Button x:Name="UpdateImageAdmin" Content="Update Image" HorizontalAlignment="Left" Margin="864,399,0,0" VerticalAlignment="Top" Width="102"/>
-            <Button x:Name="UpdateCategAdmin" Content="Add/Update Category" HorizontalAlignment="Left" Margin="224,153,0,0" VerticalAlignment="Top" Width="135"/>
-            <Button x:Name="UpdateWordAdmin" Content="Add/Update Word" HorizontalAlignment="Left" Margin="846,153,0,0" VerticalAlignment="Top" Width="120"/>
-
+            <Button x:Name="ChooseImageAdmin" Content="Choose Image" HorizontalAlignment="Left" Margin="733,399,0,0" VerticalAlignment="Top" Width="102"/>
+            <Button x:Name="UpdateImageAdmin" Content="Update Image" HorizontalAlignment="Left" Margin="859,399,0,0" VerticalAlignment="Top" Width="102"/>
+            <Button x:Name="UpdateCategAdmin" Content="Add/Update Category" HorizontalAlignment="Left" Margin="220,153,0,0" VerticalAlignment="Top" Width="135"/>
+            <Button x:Name="UpdateWordAdmin" Content="Add/Update Word" HorizontalAlignment="Left" Margin="841,153,0,0" VerticalAlignment="Top" Width="120"/>
         </Grid>
         <Grid x:Name="Dictionary" Visibility="Hidden">
             <Label Content="Dictionary" Margin="282,10,268,329" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="50" Height="82" Width="236"/>
 
-            <Label Content="Select a category:&#x9;&#x9;&#x9;&#x9;&#x9;       and/or" Margin="31,115,510,283" FontSize="15" HorizontalAlignment="Center" Width="453"/>
-            <ComboBox x:Name="SearchComboCat" HorizontalAlignment="Center" Margin="165,115,635,0" VerticalAlignment="Top" Width="195" IsEditable="True" Height="30" FontSize="15"/>
+            <Label Content="Select a category:" Margin="26,115,834,283" FontSize="15" HorizontalAlignment="Center" Width="129"/>
+            <ComboBox x:Name="SearchComboCat" HorizontalAlignment="Left" Margin="160,115,0,0" VerticalAlignment="Top" Width="195" IsEditable="True" Height="30" FontSize="15"/>
 
-            <Label Content="Search for a word:" Margin="489,115,371,283" FontSize="15" HorizontalAlignment="Center" Width="134"/>
-            <ComboBox Name="SearchCombo" HorizontalAlignment="Center" Margin="628,115,28,0" VerticalAlignment="Top" Width="338" IsEditable="True" Height="30" FontSize="15"/>
+            <Label Content="and/or" Margin="406,115,522,280" FontSize="15"/>
+            <Label Content="Search for a word:" Margin="484,115,372,283" FontSize="15" HorizontalAlignment="Center" Width="134"/>
+            <ComboBox Name="SearchCombo" HorizontalAlignment="Left" Margin="623,115,0,0" VerticalAlignment="Top" Width="338" IsEditable="True" Height="30" FontSize="15"/>
 
-            <Label Content="Definition:" Margin="30,163,869,237" FontSize="15"/>
-            <TextBox Name="SearchText" HorizontalAlignment="Left" Height="215" Margin="30,204,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="457" IsReadOnly="True" Focusable="False"/>
+            <Label Content="Definition:" Margin="26,163,869,237" FontSize="15"/>
+            <Label Name="SearchText" Content="" HorizontalAlignment="Left" Margin="26,204,0,0" VerticalAlignment="Top" Width="457" Height="215"/>
 
-            <Label Content="Image:" Margin="509,168,419,227" FontSize="15"/>
-            <Image Name="SearchImage" HorizontalAlignment="Left" Height="215" Margin="509,204,0,0" VerticalAlignment="Top" Width="457"/>
+            <Label Content="Image:" Margin="504,168,419,227" FontSize="15"/>
+            <Image x:Name="SearchImage" HorizontalAlignment="Left"  Margin="504,204,0,0" VerticalAlignment="Top" Width="457" Height="215"/>
 
             <Button x:Name="BackSearch" Content="Back to Main Menu" HorizontalAlignment="Left" Height="25" Margin="10,10,0,0" VerticalAlignment="Top" Width="115" Click="BackSearch_Click"/>
         </Grid>
-        <Grid x:Name="Game" Visibility="Hidden">
-            <Button x:Name="GameSearch" Content="Back to Main Menu" HorizontalAlignment="Left" Height="25" Margin="10,10,0,0" VerticalAlignment="Top" Width="115" Click="GameSearch_Click"/>
+        <Grid x:Name="Game" Visibility="Hidden" >
+            <Label Content="Word Game" Margin="434,8,440,398" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" Height="35" Width="120"/>
+
+            <Button x:Name="BackGame" Content="Back to Main Menu" HorizontalAlignment="Left" Height="25" Margin="10,10,0,0" VerticalAlignment="Top" Width="115" Click="BackGame_Click"/>
+
+            <Image x:Name="GameImage" HorizontalAlignment="Left" Margin="270,50,0,0" VerticalAlignment="Top" Width="460" Height="220" />
+            <Label x:Name="GameLabel" Content="" HorizontalAlignment="Left" Margin="270,50,0,0"  VerticalAlignment="Top" Width="460" Height="220"/>
+
+            <Button x:Name="RestartGame" Content="Restart" HorizontalAlignment="Left" Margin="270,376,0,0" VerticalAlignment="Top" Width="100" Height="30" Click="RestartGame_Click"/>
+            <Button x:Name="NextGame" Content="Next before" HorizontalAlignment="Left" Margin="630,376,0,0" VerticalAlignment="Top" Width="100" Height="30"/>
+
+            <Label Content="What is that?" Margin="270,289,610,106" FontSize="15"/>
+            <TextBox HorizontalAlignment="Left" Height="30" Margin="270,328,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="460" FontSize="15"/>
+
+            <Label Content="Score: " Margin="448,376,488,19" FontSize="15"/>
+            <Label x:Name="Score" Content="0" Margin="506,376,430,19" FontSize="15"/>
         </Grid>
     </Grid>
 </Window>

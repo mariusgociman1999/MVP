@@ -55,10 +55,15 @@ namespace Dictionar
             Main.Visibility = Visibility.Visible;
         }
 
-        private void GameSearch_Click(object sender, RoutedEventArgs e)
+        private void BackGame_Click(object sender, RoutedEventArgs e)
         {
             Game.Visibility = Visibility.Hidden;
             Main.Visibility = Visibility.Visible;
+        }
+
+        private void RestartGame_Click(object sender, RoutedEventArgs e)
+        {
+            NextGame.Content = "Next";
         }
     }
 }
