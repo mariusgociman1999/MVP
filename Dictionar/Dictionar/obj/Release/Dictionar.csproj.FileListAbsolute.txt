@@ -1,0 +1,16 @@
+C:\Users\mariu\Desktop\Materiale\MVP\MVP\Dictionar\Dictionar\bin\Release\Dictionar.exe.config
+C:\Users\mariu\Desktop\Materiale\MVP\MVP\Dictionar\Dictionar\bin\Release\Dictionar.exe
+C:\Users\mariu\Desktop\Materiale\MVP\MVP\Dictionar\Dictionar\bin\Release\Dictionar.pdb
+C:\Users\mariu\Desktop\Materiale\MVP\MVP\Dictionar\Dictionar\obj\Release\Dictionar.csprojAssemblyReference.cache
+C:\Users\mariu\Desktop\Materiale\MVP\MVP\Dictionar\Dictionar\obj\Release\MainWindow.g.cs
+C:\Users\mariu\Desktop\Materiale\MVP\MVP\Dictionar\Dictionar\obj\Release\App.g.cs
+C:\Users\mariu\Desktop\Materiale\MVP\MVP\Dictionar\Dictionar\obj\Release\GeneratedInternalTypeHelper.g.cs
+C:\Users\mariu\Desktop\Materiale\MVP\MVP\Dictionar\Dictionar\obj\Release\Dictionar_MarkupCompile.cache
+C:\Users\mariu\Desktop\Materiale\MVP\MVP\Dictionar\Dictionar\obj\Release\Dictionar_MarkupCompile.lref
+C:\Users\mariu\Desktop\Materiale\MVP\MVP\Dictionar\Dictionar\obj\Release\MainWindow.baml
+C:\Users\mariu\Desktop\Materiale\MVP\MVP\Dictionar\Dictionar\obj\Release\Dictionar.g.resources
+C:\Users\mariu\Desktop\Materiale\MVP\MVP\Dictionar\Dictionar\obj\Release\Dictionar.Properties.Resources.resources
+C:\Users\mariu\Desktop\Materiale\MVP\MVP\Dictionar\Dictionar\obj\Release\Dictionar.csproj.GenerateResource.cache
+C:\Users\mariu\Desktop\Materiale\MVP\MVP\Dictionar\Dictionar\obj\Release\Dictionar.csproj.CoreCompileInputs.cache
+C:\Users\mariu\Desktop\Materiale\MVP\MVP\Dictionar\Dictionar\obj\Release\Dictionar.exe
+C:\Users\mariu\Desktop\Materiale\MVP\MVP\Dictionar\Dictionar\obj\Release\Dictionar.pdb

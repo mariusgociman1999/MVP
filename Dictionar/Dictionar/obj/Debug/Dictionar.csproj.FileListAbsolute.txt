@@ -28,3 +28,4 @@ C:\Users\mariu\Desktop\Materiale\MVP\MVP\Dictionar\Dictionar\obj\Debug\Dictionar
 C:\Users\mariu\Desktop\Materiale\MVP\MVP\Dictionar\Dictionar\obj\Debug\Dictionar.csproj.CoreCompileInputs.cache
 C:\Users\mariu\Desktop\Materiale\MVP\MVP\Dictionar\Dictionar\obj\Debug\Dictionar.exe
 C:\Users\mariu\Desktop\Materiale\MVP\MVP\Dictionar\Dictionar\obj\Debug\Dictionar.pdb
+C:\Users\mariu\Desktop\Materiale\MVP\MVP\Dictionar\Dictionar\obj\Debug\GeneratedInternalTypeHelper.g.cs

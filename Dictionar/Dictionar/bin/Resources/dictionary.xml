@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dictionary>
+	<word>
+		<category>Car Parts</category>
+		<name>Engine</name>
+		<definition>Vital part of a vehicle that allows its movement.</definition>
+		<image>..\Images\NoImage.jpg</image>
+	</word>
+	<word>
+		<category>Car Parts</category>
+		<name>Supercharger</name>
+		<definition>A component of a car's engine that gives the said engine more power by using crankshaft revolutions.</definition>
+		<image>..\Images\super.jpg</image>
+	</word>
+	<word>
+		<category>Car Parts</category>
+		<name>Turbocharger</name>
+		<definition>A component of a car's engine that gives the said engine more power by using exhaust fumes.</definition>
+		<image>..\Images\turbo.jpg</image>
+	</word>
+	<word>
+		<category>Motorsports</category>
+		<name>Formula 1</name>
+		<definition>A competition which involves racing on varied circuits, for a certain amount of laps.</definition>
+		<image>..\Images\NoImage.jpg</image>
+	</word>
+	<word>
+		<category>Motorsports</category>
+		<name>Formula D</name>
+		<definition>A competition which involves cars Drifting around a designed circuit to earn style points.</definition>
+		<image>..\Images\fd.jpg</image>
+	</word>
+	<word>
+		<category>Motorsports</category>
+		<name>Nascar</name>
+		<definition>An American competition which involves racing in an oval circuit, counterclockwise, for a certain amount of laps.</definition>
+		<image>..\Images\nascar.jpg</image>
+	</word>
+	<word>
+		<category>Technology</category>
+		<name>Processor</name>
+		<definition>A component of a Computer that executes all the operations.</definition>
+		<image>..\Images\NoImage.jpg</image>
+	</word>
+</dictionary>
