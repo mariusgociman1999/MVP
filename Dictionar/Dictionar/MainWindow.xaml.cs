@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Media.Imaging;
@@ -20,6 +21,7 @@ namespace Dictionar
         public Stack<int> indexes = new Stack<int>();
         public int score = 0;
         public int count = 0;
+        public bool cont  = true;
 
         MyDictionary dictionary;
 
@@ -38,7 +40,7 @@ namespace Dictionar
 
         private void GameMain_Click(object sender, RoutedEventArgs e)
         {
-            GetRandom();
+            Restart();
             Main.Visibility = Visibility.Hidden;
             Game.Visibility = Visibility.Visible;
         }
@@ -69,13 +71,7 @@ namespace Dictionar
 
         private void RestartGame_Click(object sender, RoutedEventArgs e)
         {
-            NextGame.Content = "Next";
-            score = 0;
-            Score.Content = score.ToString();
-            indexes.Clear();
-            count = 0;
-            Reset();
-            GetRandom();
+            Restart();
         }
 
         private void DeleteCategory_Click(object sender, RoutedEventArgs e)
@@ -205,6 +201,21 @@ namespace Dictionar
             }
         }
 
+        private void NextGame_Click(object sender, RoutedEventArgs e)
+        {
+            Check();
+            if (count == 5)
+            {
+                MessageBox.Show(string.Format("Game Finished. Score is {0}", score), "Message");
+                Restart();
+            }
+            else
+            {
+                Reset();
+                GetRandom();
+            }
+        }
+
         private void Refresh()
         {
             DataContext = null;
@@ -234,11 +245,7 @@ namespace Dictionar
                     NextGame.Content = "Finish";
                 }
             }
-            else if (count > 5)
-            {
-                MessageBox.Show(string.Format("Game Finished. Score is {0}", score), "Message");
-            }
-            else
+            else if(cont)
             {
                 GetRandom();
             }
@@ -249,28 +256,39 @@ namespace Dictionar
             GameEntry.Text = "";
             GameLabel.Text = "";
             GameImage.Source = null;
-            Feed.Content = "";
+            cont = true;
         }
 
-        private void NextGame_Click(object sender, RoutedEventArgs e)
+        private void Restart()
         {
-            _ = Check();
+            NextGame.Content = "Next";
+            GameFeed.Content = "";
+            score = 0;
+            Score.Content = score.ToString();
+            indexes.Clear();
+            count = 0;
             Reset();
             GetRandom();
         }
 
-        public async Task Check()
+        public void Check()
         {
-            if (dictionary.MyDict[defaultCategory][indexes.Peek()].Name == GameEntry.Text)
+            if (GameImage.Source !=null || GameLabel.Text != "")
             {
-                Score.Content = Convert.ToString(++score);
-                Feed.Content = "CORRECT";
+                if (dictionary.MyDict[defaultCategory][indexes.Peek()].Name == GameEntry.Text)
+                {
+                    Score.Content = Convert.ToString(++score);
+                    GameFeed.Content = "Last guess was correct";
+                }
+                else
+                {
+                    GameFeed.Content = "Last guess was incorrect";
+                }
             }
             else
             {
-                Feed.Content = "INCORRECT";
+                GameFeed.Content = "";
             }
-            await Task.Delay(2000);
         }
     }
 }

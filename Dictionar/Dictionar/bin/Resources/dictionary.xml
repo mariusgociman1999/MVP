@@ -1,6 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <dictionary>
 	<word>
+		<category>Alimente</category>
+		<name>Mar</name>
+		<definition>It's a fruit.</definition>
+		<image>..\Images\NoImage.jpg</image>
+	</word>
+	<word>
 		<category>Car Parts</category>
 		<name>Engine</name>
 		<definition>Vital part of a vehicle that allows its movement.</definition>
