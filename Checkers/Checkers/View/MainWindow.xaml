@@ -7,9 +7,9 @@
         mc:Ignorable="d"
         Title="Checkers" Height="550" Width="750" Background="#49351d">
     <Window.DataContext>
-        <local:/>
+        <local:GameVM/>
     </Window.DataContext>
-    
+
     <Grid x:Name="mainGrid">
         <Label Content="Current Player" Margin="42,162,528,307" Foreground="Beige" FontSize="25"/>
         <Label x:Name="currentPlayer" Margin="42,217,528,251" Foreground="Beige" FontSize="23" HorizontalContentAlignment="Center"/>
@@ -88,11 +88,36 @@
                 <Border  Background="Beige"/>
             </UniformGrid>
         </Border>
-        <Border BorderThickness ="7" BorderBrush="Black" Width="450" Height="450" Margin="223,0,0,0">
-            <ItemsControl x:Name="checkersGrid" ItemsSource="Binding {Board}">
-                
-            </ItemsControl>
-        </Border>
 
+        <Border BorderThickness ="7" BorderBrush="Black" Width="450" Height="450" Margin="223,0,0,0">
+            <Grid>
+                <ItemsControl x:Name="checkersGrid" ItemsSource="{Binding BoardVM}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <ItemsControl ItemsSource="{Binding}">
+                                <ItemsControl.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <StackPanel Orientation="Horizontal"/>
+                                    </ItemsPanelTemplate>
+                                </ItemsControl.ItemsPanel>
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <Border>
+                                            <Button Command="{Binding ClickCommand}" CommandParameter="{Binding PieceVM}">
+                                                <Button.Template>
+                                                    <ControlTemplate>
+                                                        <Image Source="{Binding PieceVM.Image}" Stretch="UniformToFill"/>
+                                                    </ControlTemplate>
+                                                </Button.Template>
+                                            </Button>
+                                        </Border>
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ItemsControl>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </Grid>
+        </Border>
     </Grid>
 </Window>

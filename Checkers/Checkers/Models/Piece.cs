@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Checkers
 {
-    class Piece
+    public class Piece
     {
         public string _image;
         public string Image 
@@ -45,14 +45,14 @@ namespace Checkers
 
         public Piece(Position pos, int type)
         {
-            Position = new Position(pos);
+            Position = pos;
             if (type == 1)
             {
-                Image = "\\red.png";
+                Image = "..\\Resources\\red.png";
             }
             else if(type == 2)
             {
-                Image = "\\black.png";
+                Image = "..\\Resources\\black.png";
             }
             else
             {

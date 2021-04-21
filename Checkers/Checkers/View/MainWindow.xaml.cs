@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,9 +24,6 @@ namespace Checkers
         public MainWindow()
         {
             InitializeComponent();
-            Game checkers = new Game();
-            DataContext = checkers;
-            //checkers.Run();
         }
     }
 }

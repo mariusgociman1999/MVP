@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Checkers
 {
-    class Position
+    public class Position
     {
         public int _row;
         public int Row
@@ -28,7 +28,7 @@ namespace Checkers
             Column = column;
         }
 
-        public Position() : this(0,0) { }
+        public Position() : this(0, 0) { }
 
         public Position(Position pos) : this(pos.Row, pos.Column) { }
     }

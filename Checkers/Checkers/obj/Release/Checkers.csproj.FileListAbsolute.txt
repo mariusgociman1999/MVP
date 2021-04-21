@@ -1,0 +1,16 @@
+C:\Users\mariu\Desktop\Materiale\MVP\MVP\Checkers\Checkers\bin\Release\Checkers.exe.config
+C:\Users\mariu\Desktop\Materiale\MVP\MVP\Checkers\Checkers\bin\Release\Checkers.exe
+C:\Users\mariu\Desktop\Materiale\MVP\MVP\Checkers\Checkers\bin\Release\Checkers.pdb
+C:\Users\mariu\Desktop\Materiale\MVP\MVP\Checkers\Checkers\obj\Release\Checkers.csprojAssemblyReference.cache
+C:\Users\mariu\Desktop\Materiale\MVP\MVP\Checkers\Checkers\obj\Release\MainWindow.g.cs
+C:\Users\mariu\Desktop\Materiale\MVP\MVP\Checkers\Checkers\obj\Release\App.g.cs
+C:\Users\mariu\Desktop\Materiale\MVP\MVP\Checkers\Checkers\obj\Release\GeneratedInternalTypeHelper.g.cs
+C:\Users\mariu\Desktop\Materiale\MVP\MVP\Checkers\Checkers\obj\Release\Checkers_MarkupCompile.cache
+C:\Users\mariu\Desktop\Materiale\MVP\MVP\Checkers\Checkers\obj\Release\Checkers_MarkupCompile.lref
+C:\Users\mariu\Desktop\Materiale\MVP\MVP\Checkers\Checkers\obj\Release\MainWindow.baml
+C:\Users\mariu\Desktop\Materiale\MVP\MVP\Checkers\Checkers\obj\Release\Checkers.g.resources
+C:\Users\mariu\Desktop\Materiale\MVP\MVP\Checkers\Checkers\obj\Release\Checkers.Properties.Resources.resources
+C:\Users\mariu\Desktop\Materiale\MVP\MVP\Checkers\Checkers\obj\Release\Checkers.csproj.GenerateResource.cache
+C:\Users\mariu\Desktop\Materiale\MVP\MVP\Checkers\Checkers\obj\Release\Checkers.csproj.CoreCompileInputs.cache
+C:\Users\mariu\Desktop\Materiale\MVP\MVP\Checkers\Checkers\obj\Release\Checkers.exe
+C:\Users\mariu\Desktop\Materiale\MVP\MVP\Checkers\Checkers\obj\Release\Checkers.pdb
