@@ -1,0 +1,16 @@
+﻿<Window x:Class="School.Views.AddSubj"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:School.Views"
+        mc:Ignorable="d"
+        Title="Adaugare Materie" Height="300" Width="300">
+    <Grid>
+        <TextBox x:Name="subjectName" HorizontalAlignment="Left" Height="23" Margin="88,101,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Denumirea Materiei" HorizontalAlignment="Left" Margin="88,70,0,0" VerticalAlignment="Top"/>
+        
+        <Button x:Name="submitSubject" Content="Adauga" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="110,177,0,0" Height="33" Click="submitSubject_Click"/>
+
+    </Grid>
+</Window>

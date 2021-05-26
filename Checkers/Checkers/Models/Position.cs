@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,18 +9,25 @@ namespace Checkers
 {
     public class Position
     {
-        public int _row;
+        private int row;
         public int Row
         {
-            get => _row;
-            set => _row = value;
+            get { return row; }
+            set
+            {
+                row = value;
+                NotifyPropertyChanged("Row");
+            }
         }
-
-        public int _column;
+        private int column;
         public int Column
         {
-            get => _column;
-            set => _column = value;
+            get { return column; }
+            set
+            {
+                column = value;
+                NotifyPropertyChanged("Column");
+            }
         }
 
         public Position(int row, int column)
@@ -31,5 +39,12 @@ namespace Checkers
         public Position() : this(0, 0) { }
 
         public Position(Position pos) : this(pos.Row, pos.Column) { }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+        protected void NotifyPropertyChanged(string propertyName)
+        {
+            if (PropertyChanged != null)
+                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+        }
     }
 }

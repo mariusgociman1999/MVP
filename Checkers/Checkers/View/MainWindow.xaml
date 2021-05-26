@@ -10,114 +10,34 @@
         <local:GameVM/>
     </Window.DataContext>
 
-    <Grid x:Name="mainGrid">
-        <Label Content="Current Player" Margin="42,162,528,307" Foreground="Beige" FontSize="25"/>
-        <Label x:Name="currentPlayer" Margin="42,217,528,251" Foreground="Beige" FontSize="23" HorizontalContentAlignment="Center"/>
-        <Border BorderThickness ="7" BorderBrush="Black" Width="450" Height="450" Margin="223,0,0,0">
-            <UniformGrid Rows="8" Columns="8">
-                <Border  Background="Beige"/>
-                <Border  Background="#805d33"/>
-                <Border  Background="Beige"/>
-                <Border  Background="#805d33"/>
-                <Border  Background="Beige"/>
-                <Border  Background="#805d33"/>
-                <Border  Background="Beige"/>
-                <Border  Background="#805d33"/>
-
-                <Border  Background="#805d33"/>
-                <Border  Background="Beige"/>
-                <Border  Background="#805d33"/>
-                <Border  Background="Beige"/>
-                <Border  Background="#805d33"/>
-                <Border  Background="Beige"/>
-                <Border  Background="#805d33"/>
-                <Border  Background="Beige"/>
-
-                <Border  Background="Beige"/>
-                <Border  Background="#805d33"/>
-                <Border  Background="Beige"/>
-                <Border  Background="#805d33"/>
-                <Border  Background="Beige"/>
-                <Border  Background="#805d33"/>
-                <Border  Background="Beige"/>
-                <Border  Background="#805d33"/>
-
-                <Border  Background="#805d33"/>
-                <Border  Background="Beige"/>
-                <Border  Background="#805d33"/>
-                <Border  Background="Beige"/>
-                <Border  Background="#805d33"/>
-                <Border  Background="Beige"/>
-                <Border  Background="#805d33"/>
-                <Border  Background="Beige"/>
-
-                <Border  Background="Beige"/>
-                <Border  Background="#805d33"/>
-                <Border  Background="Beige"/>
-                <Border  Background="#805d33"/>
-                <Border  Background="Beige"/>
-                <Border  Background="#805d33"/>
-                <Border  Background="Beige"/>
-                <Border  Background="#805d33"/>
-
-                <Border  Background="#805d33"/>
-                <Border  Background="Beige"/>
-                <Border  Background="#805d33"/>
-                <Border  Background="Beige"/>
-                <Border  Background="#805d33"/>
-                <Border  Background="Beige"/>
-                <Border  Background="#805d33"/>
-                <Border  Background="Beige"/>
-
-                <Border  Background="Beige"/>
-                <Border  Background="#805d33"/>
-                <Border  Background="Beige"/>
-                <Border  Background="#805d33"/>
-                <Border  Background="Beige"/>
-                <Border  Background="#805d33"/>
-                <Border  Background="Beige"/>
-                <Border  Background="#805d33"/>
-
-                <Border  Background="#805d33"/>
-                <Border  Background="Beige"/>
-                <Border  Background="#805d33"/>
-                <Border  Background="Beige"/>
-                <Border  Background="#805d33"/>
-                <Border  Background="Beige"/>
-                <Border  Background="#805d33"/>
-                <Border  Background="Beige"/>
-            </UniformGrid>
-        </Border>
-
-        <Border BorderThickness ="7" BorderBrush="Black" Width="450" Height="450" Margin="223,0,0,0">
-            <Grid>
-                <ItemsControl x:Name="checkersGrid" ItemsSource="{Binding BoardVM}">
-                    <ItemsControl.ItemTemplate>
-                        <DataTemplate>
-                            <ItemsControl ItemsSource="{Binding}">
-                                <ItemsControl.ItemsPanel>
-                                    <ItemsPanelTemplate>
-                                        <StackPanel Orientation="Horizontal"/>
-                                    </ItemsPanelTemplate>
-                                </ItemsControl.ItemsPanel>
-                                <ItemsControl.ItemTemplate>
-                                    <DataTemplate>
-                                        <Border>
-                                            <Button Command="{Binding ClickCommand}" CommandParameter="{Binding PieceVM}">
-                                                <Button.Template>
-                                                    <ControlTemplate>
-                                                        <Image Source="{Binding PieceVM.Image}" Stretch="UniformToFill"/>
-                                                    </ControlTemplate>
-                                                </Button.Template>
-                                            </Button>
-                                        </Border>
-                                    </DataTemplate>
-                                </ItemsControl.ItemTemplate>
-                            </ItemsControl>
-                        </DataTemplate>
-                    </ItemsControl.ItemTemplate>
-                </ItemsControl>
-            </Grid>
-        </Border>
+    <Grid>
+        <Label Content="Current Player" Margin="42,162,519,307" Foreground="Beige" FontSize="25"/>
+        <Label x:Name="currentPlayer" Content="{Binding Path = myPlayer[0].Play.Name}" Margin="42,217,528,251" Foreground="Beige" FontSize="23" HorizontalContentAlignment="Center"/>
+        <ItemsControl Name="checkersGrid" ItemsSource="{Binding BoardVM}" VerticalAlignment="Center" Width="450" Height="450" Margin="223,0,0,0">
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <ItemsControl ItemsSource="{Binding}">
+                        <ItemsControl.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <StackPanel Orientation="Horizontal" />
+                            </ItemsPanelTemplate>
+                        </ItemsControl.ItemsPanel>
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <Border Width="56" Height="56" BorderThickness="1" BorderBrush="#000000">
+                                    <Button Command="{Binding ClickCommand}" CommandParameter="{Binding Piece}">
+                                        <Button.Template>
+                                            <ControlTemplate>
+                                                <Image Source="{Binding Piece.ShownImage}" Stretch="UniformToFill" />
+                                            </ControlTemplate>
+                                        </Button.Template>
+                                    </Button>
+                                </Border>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
     </Grid>
 </Window>

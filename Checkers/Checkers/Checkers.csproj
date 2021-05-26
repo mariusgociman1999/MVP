@@ -56,6 +56,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Commands\RelayCommand.cs" />
+    <Compile Include="Models\Player.cs" />
     <Compile Include="Services\GameLogic.cs" />
     <Compile Include="Services\Helper.cs" />
     <Compile Include="ViewModel\Notification.cs" />
@@ -68,8 +69,8 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Models\Game.cs" />
     <Compile Include="ViewModel\GameVM.cs" />
+    <Compile Include="ViewModel\PlayerVM.cs" />
     <Compile Include="View\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -104,10 +105,15 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\black king.png" />
     <Resource Include="Resources\black.png" />
-    <Resource Include="Resources\red king.png" />
     <Resource Include="Resources\red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\black_k.png" />
+    <Resource Include="Resources\blank.png" />
+    <Resource Include="Resources\blank_br.png" />
+    <Resource Include="Resources\possible.png" />
+    <Resource Include="Resources\red_k.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

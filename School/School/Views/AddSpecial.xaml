@@ -1,0 +1,15 @@
+﻿<Window x:Class="School.Views.AddSpecial"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:School.Views"
+        mc:Ignorable="d"
+        Title="Adaugare Specialitate" Height="300" Width="300">
+    <Grid>
+        <TextBox x:Name="specialName" HorizontalAlignment="Left" Height="23" Margin="88,101,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Numele specializarii" HorizontalAlignment="Left" Margin="88,75,0,0" VerticalAlignment="Top"/>
+        
+        <Button Content="Adauga" HorizontalAlignment="Left" Margin="110,177,0,0" VerticalAlignment="Top" Width="75" Height="33"/>
+    </Grid>
+</Window>

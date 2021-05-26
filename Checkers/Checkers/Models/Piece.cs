@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,14 +7,29 @@ using System.Threading.Tasks;
 
 namespace Checkers
 {
-    public class Piece
+    public class Piece : INotifyPropertyChanged
     {
-        public string _image;
-        public string Image 
+        private string hiddenImage;
+        public string HiddenImage
         {
-            get => _image;
-            set => _image = value;
-         }
+            get { return hiddenImage; }
+            set
+            {
+                hiddenImage = value;
+                NotifyPropertyChanged("HidddenImage");
+            }
+        }
+
+        private string shownImage;
+        public string ShownImage
+        {
+            get { return shownImage; }
+            set
+            {
+                shownImage = value;
+                NotifyPropertyChanged("ShownImage");
+            }
+        }
 
         public Position _position;
         public Position Position
@@ -27,6 +43,13 @@ namespace Checkers
         {
             get => _moves;
             set => _moves = value;
+        }
+
+        public List<Position> _delete;
+        public List<Position> Delete
+        {
+            get => _delete;
+            set => _delete = value;
         }
 
         public int _type;
@@ -43,23 +66,21 @@ namespace Checkers
             set => _king = value;
         }
 
-        public Piece(Position pos, int type)
+        public Piece(Position pos, int type, string shown, string hidden)
         {
             Position = pos;
-            if (type == 1)
-            {
-                Image = "..\\Resources\\red.png";
-            }
-            else if(type == 2)
-            {
-                Image = "..\\Resources\\black.png";
-            }
-            else
-            {
-                Image = "";
-            }
+            ShownImage = shown;
+            HiddenImage = hidden;
+            _type = type;
             Moves = new List<Position>();
         }
-        public Piece() : this(new Position(0, 0), 0){ }
+        public Piece() : this(new Position(0, 0), 0, "", "") { }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+        protected void NotifyPropertyChanged(string propertyName)
+        {
+            if (PropertyChanged != null)
+                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+        }
     }
 }

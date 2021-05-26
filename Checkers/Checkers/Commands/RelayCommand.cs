@@ -5,37 +5,51 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
-namespace Checkers.Commands
+namespace Checkers
 {
     class RelayCommand<T> : ICommand
     {
-        private Action<T> commandAct;
-        private Predicate<T> canDoAct;
+        private Action<T> commandTask;
+        private Predicate<T> canExecuteTask;
 
-        public RelayCommand(Action<T> toDo) : this(toDo, null)
+        public RelayCommand(Action<T> workToDo, Predicate<T> canExecute)
         {
+            commandTask = workToDo;
+            canExecuteTask = canExecute;
         }
 
-        public RelayCommand(Action<T> toDo, Predicate<T> canDo)
+        public RelayCommand(Action<T> workToDo)
+            : this(workToDo, DefaultCanExecute)
         {
-            commandAct = toDo;
-            canDoAct = canDo;
+            commandTask = workToDo;
         }
 
-        public event EventHandler CanExecuteChanged
+        private static bool DefaultCanExecute(T parameter)
         {
-            add { CommandManager.RequerySuggested += value; }
-            remove { CommandManager.RequerySuggested -= value; }
+            return true;
         }
 
         public bool CanExecute(object parameter)
         {
-            return canDoAct == null || canDoAct((T)parameter);
+            return canExecuteTask != null && canExecuteTask((T)parameter);
+        }
+
+        public event EventHandler CanExecuteChanged
+        {
+            add
+            {
+                CommandManager.RequerySuggested += value;
+            }
+
+            remove
+            {
+                CommandManager.RequerySuggested -= value;
+            }
         }
 
         public void Execute(object parameter)
         {
-            commandAct((T)parameter);
+            commandTask((T)parameter);
         }
     }
 }

@@ -1,7 +1,4 @@
-﻿using Checkers.Commands;
-using Checkers.Services;
-using Checkers.ViewModel;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,13 +9,13 @@ namespace Checkers
 {
     public class PieceVM : Notification
     {
+        GameLogic gl;
         public PieceVM(Piece piece, GameLogic gl)
         {
             Piece = piece;
             this.gl = gl;
         }
-        private GameLogic gl;
-
+        
         private Piece _piece;
         
         public Piece Piece
@@ -27,7 +24,7 @@ namespace Checkers
             set
             {
                 _piece = value;
-                OnPropertyChanged();
+                NotifyPropertyChanged("Piece");
             }
         }
 

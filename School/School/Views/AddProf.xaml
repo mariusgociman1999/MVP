@@ -1,0 +1,28 @@
+﻿<Window x:Class="School.Views.AddProf"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:School.Views"
+        mc:Ignorable="d"
+        Title="Adauga Profesor" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="NumeProf" HorizontalAlignment="Left" Height="24" Margin="241,58,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="150"/>
+        <Label Content="Nume" HorizontalAlignment="Left" Height="26" Margin="241,28,0,0" VerticalAlignment="Top" Width="48"/>
+        <TextBox x:Name="PrenumeProf" HorizontalAlignment="Left" Height="24" Margin="441,58,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="150"/>
+        <Label Content="Prenume" HorizontalAlignment="Left" Height="26" Margin="441,28,0,0" VerticalAlignment="Top" Width="75"/>
+        <ComboBox x:Name="ClasaProf" HorizontalAlignment="Left" Margin="143,144,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Clasa" HorizontalAlignment="Left" Height="26" Margin="143,114,0,0" VerticalAlignment="Top" Width="48"/>
+        <CheckBox x:Name="profDir" Content="Este Diriginte" HorizontalAlignment="Left" Margin="564,145,0,0" VerticalAlignment="Top"/>
+
+        <Button x:Name="SubmitProf" Content="Adauga" HorizontalAlignment="Left" Height="46" Margin="325,286,0,0" VerticalAlignment="Top" Width="150" Click="SubmitProf_Click"/>
+
+        <TextBox x:Name="userProf" HorizontalAlignment="Left" Height="24" Margin="241,227,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="150"/>
+        <Label Content="Username" HorizontalAlignment="Left" Height="26" Margin="241,197,0,0" VerticalAlignment="Top" Width="72"/>
+        <TextBox x:Name="passProf" HorizontalAlignment="Left" Height="24" Margin="441,227,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="150"/>
+        <Label Content="Parola" HorizontalAlignment="Left" Height="26" Margin="441,197,0,0" VerticalAlignment="Top" Width="75"/>
+        <Label Content="Materia" HorizontalAlignment="Left" Height="26" Margin="346,114,0,0" VerticalAlignment="Top" Width="74"/>
+        <ComboBox x:Name="SubjProf" HorizontalAlignment="Left" Margin="346,145,0,0" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>

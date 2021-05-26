@@ -1,0 +1,27 @@
+﻿<Window x:Class="School.Views.Admin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:School.Views"
+        mc:Ignorable="d"
+        Title="Admin" Height="450" Width="700">
+    <Grid>
+        <Button x:Name="AddElev" Content="Adauga Elev" HorizontalAlignment="Left" VerticalAlignment="Top" Width="103" Margin="95,40,0,0" Height="33"/>
+        <Button x:Name="ModElev" Content="Modifica Elev" HorizontalAlignment="Left" VerticalAlignment="Top" Width="103" Margin="95,90,0,0" Height="33"/>
+
+        <Button x:Name="AddProf" Content="Adauga Profesor" HorizontalAlignment="Left" VerticalAlignment="Top" Width="103" Margin="486,40,0,0" Height="33"/>
+        <Button x:Name="ModProf" Content="Modifica Profesor" HorizontalAlignment="Left" VerticalAlignment="Top" Width="103" Margin="486,90,0,0" Height="33"/>
+
+        <Button x:Name="AddSubj" Content="Adauga Materie" HorizontalAlignment="Left" VerticalAlignment="Top" Width="103" Margin="95,197,0,0" Height="33"/>
+        <Button x:Name="ModSubj" Content="Modifica Materie" HorizontalAlignment="Left" VerticalAlignment="Top" Width="103" Margin="95,247,0,0" Height="33"/>
+
+        <Button x:Name="AddSpecial" Content="Adauga Specilizare" HorizontalAlignment="Left" VerticalAlignment="Top" Width="126" Margin="285,197,0,0" Height="33"/>
+        <Button x:Name="ModSpecial" Content="Modifica Specilizare" HorizontalAlignment="Left" VerticalAlignment="Top" Width="126" Margin="285,247,0,0" Height="33"/>
+        <Button x:Name="AddClasa" Content="Adauga Clasa" HorizontalAlignment="Left" VerticalAlignment="Top" Width="103" Margin="296,40,0,0" Height="33"/>
+        <Button x:Name="ModClasa" Content="Modifica Clasa" HorizontalAlignment="Left" VerticalAlignment="Top" Width="103" Margin="296,90,0,0" Height="33"/>
+        <Button x:Name="AddRol" Content="Adauga Rol" HorizontalAlignment="Left" VerticalAlignment="Top" Width="103" Margin="486,197,0,0" Height="33"/>
+        <Button x:Name="ModRol" Content="Modifica Rol" HorizontalAlignment="Left" VerticalAlignment="Top" Width="103" Margin="486,247,0,0" Height="33"/>
+
+    </Grid>
+</Window>

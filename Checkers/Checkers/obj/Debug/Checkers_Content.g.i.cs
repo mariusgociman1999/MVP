@@ -8,9 +8,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/black%20king.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/black.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/red%20king.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/red.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/black_k.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/blank.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/blank_br.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/possible.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/red_k.png")]
 
 
