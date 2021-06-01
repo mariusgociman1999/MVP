@@ -19,6 +19,17 @@ namespace School.Models
             }
         }
 
+        private decimal _valoare;
+        public decimal Valoare
+        {
+            get { return _valoare; }
+            set
+            {
+                _valoare = Math.Round(value, 2);
+                NotifyPropertyChanged();
+            }
+        }
+
         private Materie _materie;
         public Materie Materie 
         {

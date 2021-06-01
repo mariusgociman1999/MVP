@@ -75,6 +75,7 @@
     <Compile Include="Models\DataAccess\MaterieDA.cs" />
     <Compile Include="Models\DataAccess\NotaDA.cs" />
     <Compile Include="Models\DataAccess\ProfesorDA.cs" />
+    <Compile Include="Models\DataAccess\Prof_ClaseDA.cs" />
     <Compile Include="Models\DataAccess\RolDA.cs" />
     <Compile Include="Models\DataAccess\SpecializareDA.cs" />
     <Compile Include="Models\DataAccess\UserDA.cs" />
@@ -125,6 +126,12 @@
     </Compile>
     <Compile Include="Views\ModProf.xaml.cs">
       <DependentUpon>ModProf.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ModProfCombo.xaml.cs">
+      <DependentUpon>ModProfCombo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ModUser.xaml.cs">
+      <DependentUpon>ModUser.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Profesor.xaml.cs">
       <DependentUpon>Profesor.xaml</DependentUpon>
@@ -186,6 +193,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\ModProf.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ModProfCombo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ModUser.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

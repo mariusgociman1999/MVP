@@ -19,24 +19,24 @@ namespace School.Models
             }
         }
 
-        private Clasa _clasa;
-        public Clasa Clasa
+        private List<Clasa> _clase;
+        public List<Clasa> Clase
         {
-            get { return _clasa; }
+            get { return _clase; }
             set
             {
-                _clasa = value;
+                _clase = value;
                 NotifyPropertyChanged();
             }
         }
 
-        private Materie _materiePred;
-        public Materie MateriePred
+        private List<Materie> _materiiPred;
+        public List <Materie> MateriiPred
         {
-            get { return _materiePred; }
+            get { return _materiiPred; }
             set
             {
-                _materiePred = value;
+                _materiiPred = value;
                 NotifyPropertyChanged();
             }
         }

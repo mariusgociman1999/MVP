@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\mariu\Desktop\Materiale\MVP\MVP\School\School\App.xaml
-141551847933
+161857689462
 
-50186598341
+53-1131078793
 141066371409
-Views\AddRol.xaml;Views\MainWindow.xaml;Views\AddElev.xaml;Views\AddNota.xaml;Views\AddNotaAdv.xaml;Views\AddProf.xaml;Views\AddSpecial.xaml;Views\AddSubj.xaml;Views\Admin.xaml;Views\Diriginte.xaml;Views\Elev.xaml;Views\ModElev.xaml;Views\ModProf.xaml;Views\Profesor.xaml;
+Views\AddRol.xaml;Views\MainWindow.xaml;Views\AddElev.xaml;Views\AddNota.xaml;Views\AddNotaAdv.xaml;Views\AddProf.xaml;Views\AddSpecial.xaml;Views\AddSubj.xaml;Views\Admin.xaml;Views\Diriginte.xaml;Views\Elev.xaml;Views\ModElev.xaml;Views\ModProf.xaml;Views\ModProfCombo.xaml;Views\ModUser.xaml;Views\Profesor.xaml;
 
-False
+True
 

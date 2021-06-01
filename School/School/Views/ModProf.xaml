@@ -7,24 +7,15 @@
         mc:Ignorable="d"
         Title="ModProf" Height="450" Width="800">
     <Grid>
-        <TextBox x:Name="NumeProf" HorizontalAlignment="Left" Height="24" Margin="243,115,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="150"/>
-        <Label Content="Nume" HorizontalAlignment="Left" Height="26" Margin="243,85,0,0" VerticalAlignment="Top" Width="48"/>
-        <TextBox x:Name="PrenumeProf" HorizontalAlignment="Left" Height="24" Margin="443,115,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="150"/>
-        <Label Content="Prenume" HorizontalAlignment="Left" Height="26" Margin="443,85,0,0" VerticalAlignment="Top" Width="75"/>
-        <ComboBox x:Name="ClasaProf" HorizontalAlignment="Left" Margin="145,201,0,0" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Clasa" HorizontalAlignment="Left" Height="26" Margin="145,171,0,0" VerticalAlignment="Top" Width="48"/>
-        <CheckBox x:Name="profDir" Content="Este Diriginte" HorizontalAlignment="Left" Margin="566,202,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="NumeProf" HorizontalAlignment="Left" Height="24" Margin="228,157,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="150"/>
+        <Label Content="Nume" HorizontalAlignment="Left" Height="26" Margin="228,127,0,0" VerticalAlignment="Top" Width="48"/>
+        <TextBox x:Name="PrenumeProf" HorizontalAlignment="Left" Height="24" Margin="428,157,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="150"/>
+        <Label Content="Prenume" HorizontalAlignment="Left" Height="26" Margin="428,127,0,0" VerticalAlignment="Top" Width="75"/>
 
-        <Button x:Name="ModifProf" Content="Adauga" HorizontalAlignment="Left" Height="46" Margin="327,343,0,0" VerticalAlignment="Top" Width="150" Click="ModifProf_Click"/>
-
-        <TextBox x:Name="userProf" HorizontalAlignment="Left" Height="24" Margin="243,284,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="150"/>
-        <Label Content="Username" HorizontalAlignment="Left" Height="26" Margin="243,254,0,0" VerticalAlignment="Top" Width="72"/>
-        <TextBox x:Name="passProf" HorizontalAlignment="Left" Height="24" Margin="443,284,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="150"/>
-        <Label Content="Parola" HorizontalAlignment="Left" Height="26" Margin="443,254,0,0" VerticalAlignment="Top" Width="75"/>
-        <Label Content="Materia" HorizontalAlignment="Left" Height="26" Margin="348,171,0,0" VerticalAlignment="Top" Width="74"/>
-        <ComboBox x:Name="SubjProf" HorizontalAlignment="Left" Margin="348,202,0,0" VerticalAlignment="Top" Width="120"/>
-        <ComboBox x:Name="ModProfBox" HorizontalAlignment="Left" Margin="303,58,0,0" VerticalAlignment="Top" Width="188" SelectionChanged="ModProfBox_SelectionChanged"/>
-        <Label Content="Alege un profesor" HorizontalAlignment="Left" Margin="303,32,0,0" VerticalAlignment="Top" Width="95"/>
+        <Button x:Name="ModifProf" Content="Modifica Profesor" HorizontalAlignment="Left" Height="46" Margin="327,343,0,0" VerticalAlignment="Top" Width="150" Click="ModifProf_Click"/>
+        <ComboBox x:Name="ModProfBox" HorizontalAlignment="Left" Margin="288,100,0,0" VerticalAlignment="Top" Width="188" SelectionChanged="ModProfBox_SelectionChanged"/>
+        <Label Content="Alege un profesor" HorizontalAlignment="Left" Margin="288,74,0,0" VerticalAlignment="Top" Width="128"/>
+        <Button x:Name="ModifCombo" Content="Modifica Clase Profesor" HorizontalAlignment="Left" Height="46" Margin="327,243,0,0" VerticalAlignment="Top" Width="150" Click="ModifProf_Click"/>
 
     </Grid>
 </Window>

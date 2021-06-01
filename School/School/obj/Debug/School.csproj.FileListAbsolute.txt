@@ -37,3 +37,4 @@ C:\Users\mariu\Desktop\Materiale\MVP\MVP\School\School\obj\Debug\Views\AddSpecia
 C:\Users\mariu\Desktop\Materiale\MVP\MVP\School\School\obj\Debug\Views\AddSubj.baml
 C:\Users\mariu\Desktop\Materiale\MVP\MVP\School\School\obj\Debug\Views\ModElev.baml
 C:\Users\mariu\Desktop\Materiale\MVP\MVP\School\School\obj\Debug\Views\ModProf.baml
+C:\Users\mariu\Desktop\Materiale\MVP\MVP\School\School\obj\Debug\Views\AddRol.g.cs
