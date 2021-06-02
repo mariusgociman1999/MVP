@@ -16,7 +16,7 @@ namespace School.Models
             SqlConnection con = DAHelper.Connection;
             try
             {
-                SqlCommand cmd = new SqlCommand("GetsPECIAL", con);
+                SqlCommand cmd = new SqlCommand("GetSpecial", con);
                 ObservableCollection<Specializare> result = new ObservableCollection<Specializare>();
                 cmd.CommandType = CommandType.StoredProcedure;
                 con.Open();

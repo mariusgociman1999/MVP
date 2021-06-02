@@ -62,6 +62,7 @@
     <Compile Include="Models\BusinessLogic\AbsentaBL.cs" />
     <Compile Include="Models\BusinessLogic\ClasaBL.cs" />
     <Compile Include="Models\BusinessLogic\ElevBL.cs" />
+    <Compile Include="Models\BusinessLogic\EleviBL.cs" />
     <Compile Include="Models\BusinessLogic\MaterieBL.cs" />
     <Compile Include="Models\BusinessLogic\NotaBL.cs" />
     <Compile Include="Models\BusinessLogic\ProfesorBL.cs" />
@@ -72,6 +73,7 @@
     <Compile Include="Models\DataAccess\ClasaDA.cs" />
     <Compile Include="Models\DataAccess\ElevDA.cs" />
     <Compile Include="Models\DataAccess\DAHelper.cs" />
+    <Compile Include="Models\DataAccess\EleviDA.cs" />
     <Compile Include="Models\DataAccess\MaterieDA.cs" />
     <Compile Include="Models\DataAccess\NotaDA.cs" />
     <Compile Include="Models\DataAccess\ProfesorDA.cs" />

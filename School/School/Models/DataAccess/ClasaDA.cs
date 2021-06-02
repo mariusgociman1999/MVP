@@ -11,7 +11,7 @@ namespace School.Models
 {
     class ClasaDA
     {
-        public ObservableCollection<Clasa> GetClasa()
+        public ObservableCollection<Clasa> GetClase()
         {
             SqlConnection con = DAHelper.Connection;
             try

@@ -11,7 +11,7 @@ namespace School.Models
 {
     class NotaDA
     {
-        public ObservableCollection<Nota> GetNote()
+        public ObservableCollection<Nota> GetNote(int elevID)
         {
             SqlConnection con = DAHelper.Connection;
             try
@@ -19,6 +19,9 @@ namespace School.Models
                 SqlCommand cmd = new SqlCommand("GetNoteElev", con);
                 ObservableCollection<Nota> result = new ObservableCollection<Nota>();
                 cmd.CommandType = CommandType.StoredProcedure;
+
+                SqlParameter elevId = new SqlParameter("@elevID", elevID);
+                cmd.Parameters.Add(elevId);
                 con.Open();
                 SqlDataReader reader = cmd.ExecuteReader();
                 while (reader.Read())
