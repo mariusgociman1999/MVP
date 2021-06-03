@@ -15,7 +15,7 @@
         <Button x:Name="ModifProf" Content="Modifica Profesor" HorizontalAlignment="Left" Height="46" Margin="327,343,0,0" VerticalAlignment="Top" Width="150" Click="ModifProf_Click"/>
         <ComboBox x:Name="ModProfBox" HorizontalAlignment="Left" Margin="288,100,0,0" VerticalAlignment="Top" Width="188" SelectionChanged="ModProfBox_SelectionChanged"/>
         <Label Content="Alege un profesor" HorizontalAlignment="Left" Margin="288,74,0,0" VerticalAlignment="Top" Width="128"/>
-        <Button x:Name="ModifCombo" Content="Modifica Clase Profesor" HorizontalAlignment="Left" Height="46" Margin="327,243,0,0" VerticalAlignment="Top" Width="150" Click="ModifProf_Click"/>
+        <Button x:Name="ModifCombo" Content="Modifica Clase Profesor" HorizontalAlignment="Left" Height="46" Margin="327,243,0,0" VerticalAlignment="Top" Width="150"/>
 
     </Grid>
 </Window>

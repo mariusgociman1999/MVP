@@ -11,7 +11,7 @@
         <Label Content="Username Nou" HorizontalAlignment="Left" Height="26" Margin="124,161,0,0" VerticalAlignment="Top" Width="103"/>
         <TextBox x:Name="passUser" HorizontalAlignment="Left" Height="24" Margin="324,191,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="150"/>
         <Label Content="Parola Noua" HorizontalAlignment="Left" Height="26" Margin="324,161,0,0" VerticalAlignment="Top" Width="106"/>
-        <ComboBox x:Name="ModUserBox" HorizontalAlignment="Left" Margin="209,94,0,0" VerticalAlignment="Top" Width="188" SelectionChanged="ModProfBox_SelectionChanged"/>
+        <ComboBox x:Name="ModUserBox" HorizontalAlignment="Left" Margin="209,94,0,0" VerticalAlignment="Top" Width="188" />
         <Label Content="Alege un utilizator" HorizontalAlignment="Left" Margin="209,68,0,0" VerticalAlignment="Top" Width="128"/>
         <Button x:Name="ModifUser" Content="Modifica Utilizator" HorizontalAlignment="Left" Height="46" Margin="222,278,0,0" VerticalAlignment="Top" Width="150"/>
 

@@ -25,10 +25,10 @@ namespace School.Models
                 {
                     Clasa p = new Clasa();
                     p.IdClasa = reader.GetInt32(0);
-                    p.Descriere = reader.GetString(1);
+                    p.Descriere = reader.GetString(1).TrimEnd();
                     p.Special = new Specializare();
                     p.Special.IdSpecializare = reader.GetInt32(2);
-                    p.Special.Descriere = reader.GetString(3);
+                    p.Special.Descriere = reader.GetString(3).TrimEnd();
                     result.Add(p);
                 }
                 reader.Close();

@@ -63,5 +63,29 @@ namespace School.Views
         {
 
         }
+
+        private void AddRol_Click(object sender, RoutedEventArgs e)
+        {
+            AddRol rolWin = new AddRol();
+            rolWin.Show();
+        }
+
+        private void AddUserBt_Click(object sender, RoutedEventArgs e)
+        {
+            AddUser addUsWin = new AddUser();
+            addUsWin.Show();
+        }
+
+        private void AddSpecialBt_Click(object sender, RoutedEventArgs e)
+        {
+            AddSpecial addSpecWin = new AddSpecial();
+            addSpecWin.Show();
+        }
+
+        private void AddClasaBt_Click(object sender, RoutedEventArgs e)
+        {
+            AddClasa addClsWin = new AddClasa();
+            addClsWin.Show();
+        }
     }
 }

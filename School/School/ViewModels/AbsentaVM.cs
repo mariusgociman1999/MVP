@@ -27,7 +27,7 @@ namespace School.ViewModels
             {
                 if (addCommand == null)
                 {
-                    addCommand = new RelayCommand<Nota>(delegate { absBL.AddAbsenta(idElev, abs); });
+                    addCommand = new RelayCommand<Absenta>(delegate { absBL.AddAbsenta(idElev, abs); });
                 }
                 return addCommand;
             }
@@ -40,7 +40,7 @@ namespace School.ViewModels
             {
                 if (updateCommand == null)
                 {
-                    updateCommand = new RelayCommand<Nota>(delegate { absBL.ModAbsenta(idElev, abs); });
+                    updateCommand = new RelayCommand<Absenta>(delegate { absBL.ModAbsenta(idElev, abs); });
                 }
                 return updateCommand;
             }

@@ -8,6 +8,17 @@ namespace School.Models
 {
     public class Rol : BasePropertyChanged
     {
+        public Rol(int idRol, string desc)
+        {
+            IdRol = idRol;
+            Descriere = desc;
+        }
+
+        public Rol()
+        {
+            IdRol = 0;
+            Descriere = ""; 
+        }
         private int _idRol;
 
         public int IdRol

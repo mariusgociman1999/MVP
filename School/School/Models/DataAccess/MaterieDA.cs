@@ -25,7 +25,7 @@ namespace School.Models
                 {
                     Materie p = new Materie();
                     p.IdMaterie = reader.GetInt32(0);
-                    p.Descriere = reader.GetString(1);
+                    p.Descriere = reader.GetString(1).TrimEnd();
                     result.Add(p);
                 }
                 reader.Close();

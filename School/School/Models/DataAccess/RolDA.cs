@@ -16,7 +16,7 @@ namespace School.Models
             SqlConnection con = DAHelper.Connection;
             try
             {
-                SqlCommand cmd = new SqlCommand("GetRol", con);
+                SqlCommand cmd = new SqlCommand("GetRoluri", con);
                 ObservableCollection<Rol> result = new ObservableCollection<Rol>();
                 cmd.CommandType = CommandType.StoredProcedure;
                 con.Open();

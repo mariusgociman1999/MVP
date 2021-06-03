@@ -18,7 +18,7 @@
         <ComboBox x:Name="addNotaSubj" HorizontalAlignment="Left" Margin="159,150,0,0" VerticalAlignment="Top" Width="110"/>
         <Label Content="Materia" HorizontalAlignment="Left" Margin="159,119,0,0" VerticalAlignment="Top" Width="76"/>
 
-        <Button x:Name="SubmitNotaAdv" Content="Adauga" HorizontalAlignment="Left" Margin="109,209,0,0" VerticalAlignment="Top" Width="75" Click="SubmitNota_Click" Height="33" />
+        <Button x:Name="SubmitNotaAdv" Content="Adauga" HorizontalAlignment="Left" Margin="109,209,0,0" VerticalAlignment="Top" Width="75" Height="33" Click="SubmitNotaAdv_Click" />
 
     </Grid>
 </Window>

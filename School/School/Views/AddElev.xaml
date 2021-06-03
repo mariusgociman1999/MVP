@@ -3,9 +3,12 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:ctx="clr-namespace:School.ViewModels"
+        xmlns:convert="clr-namespace:School.Converters"
         xmlns:local="clr-namespace:School.Views"
         mc:Ignorable="d"
         Title="Adaugare Elev" Height="450" Width="800">
+   
     <Grid>
         <TextBox x:Name="NumeElev" HorizontalAlignment="Left" Height="24" Margin="123,132,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="150"/>
         <Label Content="Nume" HorizontalAlignment="Left" Height="26" Margin="123,102,0,0" VerticalAlignment="Top" Width="48"/>
@@ -14,11 +17,6 @@
         <ComboBox x:Name="ClasaElev" HorizontalAlignment="Left" Margin="519,132,0,0" VerticalAlignment="Top" Width="120"/>
         <Label Content="Clasa" HorizontalAlignment="Left" Height="26" Margin="519,102,0,0" VerticalAlignment="Top" Width="48"/>
         <Button x:Name="SubmitElev" Content="Adauga" HorizontalAlignment="Left" Height="46" Margin="323,287,0,0" VerticalAlignment="Top" Width="150" Click="SubmitElev_Click"/>
-        
-        <TextBox x:Name="userElev" HorizontalAlignment="Left" Height="24" Margin="241,227,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="150"/>
-        <Label Content="Username" HorizontalAlignment="Left" Height="26" Margin="241,197,0,0" VerticalAlignment="Top" Width="72"/>
-        <TextBox x:Name="passElev" HorizontalAlignment="Left" Height="24" Margin="441,227,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="150"/>
-        <Label Content="Parola" HorizontalAlignment="Left" Height="26" Margin="441,197,0,0" VerticalAlignment="Top" Width="75"/>
 
     </Grid>
 </Window>

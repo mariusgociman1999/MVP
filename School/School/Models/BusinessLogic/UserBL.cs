@@ -21,7 +21,6 @@ namespace School.Models
         public void AddUser(User user)
         {
             usersDA.AddUser(user);
-            Users.Add(user);
         }
 
         public void ModUser(User user)

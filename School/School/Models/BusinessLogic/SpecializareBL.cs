@@ -21,7 +21,6 @@ namespace School.Models
         public void AddSpecializare(Specializare spec)
         {
             specsDA.AddSpecializare(spec);
-            Specials.Add(spec);
         }
 
         public void ModSpecializare(Specializare spec)

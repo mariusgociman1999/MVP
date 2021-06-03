@@ -30,7 +30,7 @@ namespace School.Models
                     p.idAbsenta = reader.GetInt32(0);
                     p.Data = reader.GetDateTime(1);
                     p.Motivata = reader.GetBoolean(2);
-                    p.Materie = new Materie(reader.GetInt32(3), reader.GetString(4));
+                    p.Materie = new Materie(reader.GetInt32(3), reader.GetString(4).TrimEnd());
                     result.Add(p);
                 }
                 reader.Close();

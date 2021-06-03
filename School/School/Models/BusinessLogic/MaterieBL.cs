@@ -21,7 +21,6 @@ namespace School.Models
         public void AddMaterie(Materie materie)
         {
             materiiDA.AddMaterie(materie);
-            Materii.Add(materie);
         }
 
         public void ModMaterie(Materie materie)

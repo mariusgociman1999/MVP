@@ -3,15 +3,44 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:ctx="clr-namespace:School.ViewModels"
+        xmlns:convert="clr-namespace:School.Converters"
         xmlns:local="clr-namespace:School"
         mc:Ignorable="d"
         Title="Login" Height="450" Width="450">
-    <Grid>
-        <TextBox x:Name="userBox" HorizontalAlignment="Left" Height="23" Margin="135,167,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="180"/>
-        <TextBox x:Name="passBox"  HorizontalAlignment="Left" Height="23" Margin="135,233,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="180"/>
-        <Label Content="Username" HorizontalAlignment="Left" Margin="135,141,0,0" VerticalAlignment="Top" Width="88"/>
-        <Label Content="Password" HorizontalAlignment="Left" Margin="135,207,0,0" VerticalAlignment="Top" Width="88"/>
-        <Label Content=" School" HorizontalAlignment="Center" Height="71" Margin="135,39,127,0" VerticalAlignment="Top" Width="180" FontSize="48"/>
-        <Button x:Name="Login" Content="Login" HorizontalAlignment="Left" Height="21" Margin="224,273,0,0" VerticalAlignment="Top" Width="91" Click="Login_Click"/>
-    </Grid>
+    <Window.DataContext>
+        <ctx:UserVM/>
+    </Window.DataContext>
+
+    <StackPanel>
+        <StackPanel.Resources>
+            <convert:UserConvert x:Key="userConvert" />
+        </StackPanel.Resources>
+        <WrapPanel>
+            <Label Content=" School" HorizontalAlignment="Center" Height="71" Margin="135,39,127,0" VerticalAlignment="Top" Width="180" FontSize="48"/>
+        </WrapPanel>
+        <WrapPanel Height="75">
+            <Label Content="Username" HorizontalAlignment="Center" Width="88" Height="30" Margin="75,30,0,0"/>
+            <TextBox x:Name="userBox" HorizontalAlignment="Left" Height="23" Margin="0,30,0,0" TextWrapping="Wrap" Text="" Width="180"/>
+        </WrapPanel>
+        <WrapPanel Height="75">
+            <Label Content="Password" HorizontalAlignment="Left" Margin="75,25,0,0" VerticalAlignment="Top" Width="88"/>
+            <TextBox x:Name="passBox" HorizontalAlignment="Left" Height="23" Margin="2,25,0,0" VerticalAlignment="Top" Width="180">
+                <TextBox.Effect>
+                    <BlurEffect Radius="10"/>
+                </TextBox.Effect>
+            </TextBox>
+        </WrapPanel>
+        <WrapPanel Height="50">
+            <Button Content="Login" HorizontalAlignment="Left" Height="21" Margin="180,20,0,0" 
+                VerticalAlignment="Top" Width="91" Command="{Binding CheckCommand}">
+                <Button.CommandParameter>
+                    <MultiBinding Converter="{StaticResource userConvert}">
+                        <Binding ElementName="userBox" Path="Text"/>
+                        <Binding ElementName="passBox" Path="Text"/>
+                    </MultiBinding>
+                </Button.CommandParameter>
+            </Button>
+        </WrapPanel>
+    </StackPanel>
 </Window>

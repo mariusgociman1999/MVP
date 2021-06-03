@@ -3,14 +3,37 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:ctx="clr-namespace:School.ViewModels"
+        xmlns:convert="clr-namespace:School.Converters"
         xmlns:local="clr-namespace:School.Views"
         mc:Ignorable="d"
-       Title="Adaugare Clasa" Height="300" Width="300">
-    <Grid>
-        <TextBox x:Name="DescClasa" HorizontalAlignment="Left" Height="23" Margin="87,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Descriere Clasa" HorizontalAlignment="Left" Margin="87,87,0,0" VerticalAlignment="Top" Width="107"/>
-        <Button x:Name="AddClass" Content="Adauga" HorizontalAlignment="Left" Margin="104,162,0,0" VerticalAlignment="Top" Width="75" Height="33"/>
-        <ComboBox x:Name="SpecAddClasa" HorizontalAlignment="Left" Margin="87,60,0,0" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Specializare" HorizontalAlignment="Left" Margin="87,29,0,0" VerticalAlignment="Top" Width="92"/>
-    </Grid>
+       Title="Adaugare Clasa" Height="300" Width="400">
+    <Window.DataContext>
+        <ctx:ClasaVM/>
+    </Window.DataContext>
+    <StackPanel>
+        <StackPanel.Resources>
+            <convert:ClasaConvertAdd x:Key="classConvert" />
+        </StackPanel.Resources>
+
+        <WrapPanel Height="75">
+            <Label Content="Specializare" HorizontalAlignment="Left" Margin="70,20,0,0" VerticalAlignment="Top" Width="92"/>
+            <ComboBox x:Name="SpecAddClasa" HorizontalAlignment="Left" Margin="0,20,0,0" VerticalAlignment="Top" Width="120" ItemsSource="{Binding SpecList}" SelectedValue="{Binding IdSpecializare}" DisplayMemberPath="Descriere" />
+        </WrapPanel>
+        <WrapPanel Height="75">
+            <Label Content="Descriere Clasa" HorizontalAlignment="Left" Margin="50,20,0,0" VerticalAlignment="Top" Width="107"/>
+            <TextBox x:Name="DescClasaBox" HorizontalAlignment="Left" Height="23" Margin="10,20,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        </WrapPanel>
+        <WrapPanel Height="75">
+            <Button x:Name="AddClass" Content="Adauga" HorizontalAlignment="Left" Margin="155,20,0,0" VerticalAlignment="Top" Width="75" Height="33"
+                    Command="{Binding AddCommand}">
+                <Button.CommandParameter>
+                    <MultiBinding Converter="{StaticResource classConvert}">
+                        <Binding ElementName="DescClasaBox" Path="Text"/>
+                        <Binding ElementName="SpecAddClasa" Path="SelectedValue"/>
+                    </MultiBinding>
+                </Button.CommandParameter>
+            </Button>
+        </WrapPanel>
+    </StackPanel>
 </Window>

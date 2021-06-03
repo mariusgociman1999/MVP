@@ -6,16 +6,30 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using School.Models;
+using School.Views;
 
 namespace School.ViewModels
 {
     class UserVM
     {
         UserBL userBL = new UserBL();
+        PersoanaBL persoanaBL = new PersoanaBL();
 
         public UserVM()
         {
             UserList = userBL.GetUsers();
+            PeopleList = persoanaBL.GetPeople();
+        }
+        public ObservableCollection<Persoana> PeopleList
+        {
+            get
+            {
+                return persoanaBL.Prople;
+            }
+            set
+            {
+                persoanaBL.Prople = value;
+            }
         }
 
         public ObservableCollection<User> UserList
@@ -30,17 +44,42 @@ namespace School.ViewModels
             }
         }
 
-        public User CheckUser(string name, string pass)
+        public void CheckUser(User user)
         {
-            User result = null;
-            foreach (User user in UserList)
+            if (user != null)
             {
-                if (user.IdUser == name && user.Parola == pass)
+                foreach (User use in UserList)
                 {
-                    result = user;
+                    if (use.IdUser == user.IdUser && use.Parola == user.Parola)
+                    {
+                        startWindow(use);
+                    }
                 }
             }
-            return result;
+        }
+
+        public void startWindow(User user)
+        {
+            switch (user.RolUs.IdRol)
+            {
+                case 1:
+                    Admin adminWin = new Admin();
+                    adminWin.Show();
+                    break;
+            }
+        }
+
+        private ICommand checkCommand;
+        public ICommand CheckCommand
+        {
+            get
+            {
+                if (checkCommand == null)
+                {
+                    checkCommand = new RelayCommand<User>(CheckUser);
+                }
+                return checkCommand;
+            }
         }
 
         private ICommand addCommand;

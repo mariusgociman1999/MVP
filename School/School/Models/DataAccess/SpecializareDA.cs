@@ -25,7 +25,7 @@ namespace School.Models
                 {
                     Specializare p = new Specializare();
                     p.IdSpecializare = reader.GetInt32(0);
-                    p.Descriere = reader.GetString(1);
+                    p.Descriere = reader.GetString(1).TrimEnd();
                     result.Add(p);
                 }
                 reader.Close();

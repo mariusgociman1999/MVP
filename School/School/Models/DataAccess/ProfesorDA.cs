@@ -30,13 +30,13 @@ namespace School.Models
                 if (reader.Read())
                 {
                     result.IdPers = reader.GetInt32(0);
-                    result.Nume = reader.GetString(1);
-                    result.Prenume = reader.GetString(2);
+                    result.Nume = reader.GetString(1).TrimEnd();
+                    result.Prenume = reader.GetString(2).TrimEnd();
                     result.IdProf = reader.GetInt32(3);
                     while (reader.Read())
                     {
-                        result.Clase.Add(new Clasa(reader.GetInt32(4), reader.GetString(5), new Specializare(reader.GetInt32(6), reader.GetString(7))));
-                        result.MateriiPred.Add(new Materie(reader.GetInt32(8), reader.GetString(9)));
+                        result.Clase.Add(new Clasa(reader.GetInt32(4), reader.GetString(5).TrimEnd(), new Specializare(reader.GetInt32(6), reader.GetString(7).TrimEnd())));
+                        result.MateriiPred.Add(new Materie(reader.GetInt32(8), reader.GetString(9).TrimEnd()));
                     }
                     
                 }

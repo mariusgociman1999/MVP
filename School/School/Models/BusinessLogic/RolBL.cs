@@ -21,10 +21,9 @@ namespace School.Models
         public void AddRol(Rol rol)
         {
             roluriDA.AddRol(rol);
-            Roluri.Add(rol);
         }
 
-        public void ModAbsenta(Rol rol)
+        public void ModRol(Rol rol)
         {
             roluriDA.ModRol(rol);
         }

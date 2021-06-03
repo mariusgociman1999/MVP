@@ -43,3 +43,10 @@ C:\Users\mariu\Desktop\Materiale\MVP\MVP\School\School\obj\Debug\Views\AddClasa.
 C:\Users\mariu\Desktop\Materiale\MVP\MVP\School\School\obj\Debug\Views\ModProfCombo.g.cs
 C:\Users\mariu\Desktop\Materiale\MVP\MVP\School\School\obj\Debug\Views\ModUser.g.cs
 C:\Users\mariu\Desktop\Materiale\MVP\MVP\School\School\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\mariu\Desktop\Materiale\MVP\MVP\School\School\obj\Debug\Views\AddRol.baml
+C:\Users\mariu\Desktop\Materiale\MVP\MVP\School\School\obj\Debug\Views\AddAbsenta.baml
+C:\Users\mariu\Desktop\Materiale\MVP\MVP\School\School\obj\Debug\Views\AddClasa.baml
+C:\Users\mariu\Desktop\Materiale\MVP\MVP\School\School\obj\Debug\Views\ModProfCombo.baml
+C:\Users\mariu\Desktop\Materiale\MVP\MVP\School\School\obj\Debug\Views\ModUser.baml
+C:\Users\mariu\Desktop\Materiale\MVP\MVP\School\School\obj\Debug\Views\AddUser.g.cs
+C:\Users\mariu\Desktop\Materiale\MVP\MVP\School\School\obj\Debug\Views\AddUser.baml

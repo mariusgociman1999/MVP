@@ -24,12 +24,10 @@ namespace School.Models
                 while (reader.Read())
                 {
                     User p = new User();
-                    p.IdUser = reader.GetString(0);
-                    p.Parola = reader.GetString(1);
+                    p.IdUser = reader.GetString(0).TrimEnd();
+                    p.Parola = reader.GetString(1).TrimEnd();
                     p.IdPers = reader.GetInt32(2);
-                    p.Rol = new Rol();
-                    p.Rol.IdRol = reader.GetInt32(3);
-                    p.Rol.Descriere = reader.GetString(4);
+                    p.RolUs = new Rol(reader.GetInt32(3), reader.GetString(4));
                     result.Add(p);
                 }
                 reader.Close();
@@ -49,7 +47,7 @@ namespace School.Models
 
             SqlParameter userId = new SqlParameter("@userID", user.IdUser);
             SqlParameter userPass = new SqlParameter("@userpass", user.Parola);
-            SqlParameter rolId = new SqlParameter("@rolID", user.Rol.IdRol);
+            SqlParameter rolId = new SqlParameter("@rolID", user.RolUs.IdRol);
             SqlParameter persId = new SqlParameter("@persID", user.IdPers);
 
             cmd.Parameters.Add(userId);
@@ -70,7 +68,7 @@ namespace School.Models
 
             SqlParameter userId = new SqlParameter("@userID", user.IdUser);
             SqlParameter userPass = new SqlParameter("@userpass", user.Parola);
-            SqlParameter rolId = new SqlParameter("@rolID", user.Rol.IdRol);
+            SqlParameter rolId = new SqlParameter("@rolID", user.RolUs.IdRol);
             SqlParameter persId = new SqlParameter("@persID", user.IdPers);
 
             cmd.Parameters.Add(userId);

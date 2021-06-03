@@ -31,10 +31,10 @@ namespace School.Models
                 {
                     Elev r = new Elev();
                     r.IdPers = reader.GetInt32(0);
-                    r.Nume = reader.GetString(1);
-                    r.Prenume = reader.GetString(2);
+                    r.Nume = reader.GetString(1).TrimEnd();
+                    r.Prenume = reader.GetString(2).TrimEnd();
                     r.IdElev = reader.GetInt32(3);
-                    r.ClasaFrecv = new Clasa(reader.GetInt32(4), reader.GetString(5), new Specializare(reader.GetInt32(6), reader.GetString(7)));
+                    r.ClasaFrecv = new Clasa(reader.GetInt32(4), reader.GetString(5).TrimEnd(), new Specializare(reader.GetInt32(6), reader.GetString(7).TrimEnd()));
                     result.Add(r);
                 }
                 reader.Close();

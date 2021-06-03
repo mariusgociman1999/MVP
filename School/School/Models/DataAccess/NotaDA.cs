@@ -31,7 +31,7 @@ namespace School.Models
                     n.Valoare = reader.GetDecimal(1);
                     n.Data = reader.GetDateTime(2);
                     n.Teza = reader.GetBoolean(3);
-                    n.Materie = new Materie(reader.GetInt32(4), reader.GetString(5));
+                    n.Materie = new Materie(reader.GetInt32(4), reader.GetString(5).TrimEnd());
                     result.Add(n);
                 }
                 reader.Close();

@@ -22,7 +22,7 @@
         </DataGrid>
         <Button x:Name="AddCombo" Content="Adauga Clasa/Materia" HorizontalAlignment="Left" Margin="604,249,0,0" VerticalAlignment="Top" Width="131"/>
         <Button x:Name="delCombo" Content="Sterge" HorizontalAlignment="Left" Margin="539,142,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="ModifCombo" Content="Modifica" HorizontalAlignment="Left" Height="46" Margin="327,343,0,0" VerticalAlignment="Top" Width="150" Click="ModifProf_Click"/>
+        <Button x:Name="ModifCombo" Content="Modifica" HorizontalAlignment="Left" Height="46" Margin="327,343,0,0" VerticalAlignment="Top" Width="150"/>
 
     </Grid>
 </Window>

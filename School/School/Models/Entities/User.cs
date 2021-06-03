@@ -19,17 +19,6 @@ namespace School.Models
             }
         }
 
-        private string _username;
-        public string Username
-        {
-            get { return _username; }
-            set
-            {
-                _username = value;
-                NotifyPropertyChanged();
-            }
-        }
-
         private string _parola;
         public string Parola
         {
@@ -42,7 +31,7 @@ namespace School.Models
         }
 
         private Rol _rol;
-        public Rol Rol
+        public Rol RolUs
         {
             get { return _rol; }
             set

@@ -24,7 +24,7 @@ namespace School.Views
             InitializeComponent();
         }
 
-        private void SubmitNota_Click(object sender, RoutedEventArgs e)
+        private void SubmitNotaAdv_Click(object sender, RoutedEventArgs e)
         {
 
         }

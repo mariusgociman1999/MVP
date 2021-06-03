@@ -7,21 +7,23 @@
         mc:Ignorable="d"
         Title="Admin" Height="450" Width="700">
     <Grid>
-        <Button x:Name="AddElev" Content="Adauga Elev" HorizontalAlignment="Left" VerticalAlignment="Top" Width="103" Margin="95,40,0,0" Height="33"/>
-        <Button x:Name="ModElev" Content="Modifica Elev" HorizontalAlignment="Left" VerticalAlignment="Top" Width="103" Margin="95,90,0,0" Height="33"/>
+        <Button x:Name="AddElevBt" Content="Adauga Elev" HorizontalAlignment="Left" VerticalAlignment="Top" Width="103" Margin="95,40,0,0" Height="33"/>
+        <Button x:Name="ModElevBt" Content="Modifica Elev" HorizontalAlignment="Left" VerticalAlignment="Top" Width="103" Margin="95,90,0,0" Height="33"/>
 
-        <Button x:Name="AddProf" Content="Adauga Profesor" HorizontalAlignment="Left" VerticalAlignment="Top" Width="103" Margin="486,40,0,0" Height="33"/>
-        <Button x:Name="ModProf" Content="Modifica Profesor" HorizontalAlignment="Left" VerticalAlignment="Top" Width="103" Margin="486,90,0,0" Height="33"/>
+        <Button x:Name="AddProfBt" Content="Adauga Profesor" HorizontalAlignment="Left" VerticalAlignment="Top" Width="103" Margin="486,40,0,0" Height="33"/>
+        <Button x:Name="ModProfBt" Content="Modifica Profesor" HorizontalAlignment="Left" VerticalAlignment="Top" Width="103" Margin="486,90,0,0" Height="33"/>
 
-        <Button x:Name="AddSubj" Content="Adauga Materie" HorizontalAlignment="Left" VerticalAlignment="Top" Width="103" Margin="95,197,0,0" Height="33"/>
-        <Button x:Name="ModSubj" Content="Modifica Materie" HorizontalAlignment="Left" VerticalAlignment="Top" Width="103" Margin="95,247,0,0" Height="33"/>
+        <Button x:Name="AddSubjBt" Content="Adauga Materie" HorizontalAlignment="Left" VerticalAlignment="Top" Width="103" Margin="95,186,0,0" Height="33"/>
+        <Button x:Name="ModSubjBt" Content="Modifica Materie" HorizontalAlignment="Left" VerticalAlignment="Top" Width="103" Margin="95,236,0,0" Height="33"/>
 
-        <Button x:Name="AddSpecial" Content="Adauga Specializare" HorizontalAlignment="Left" VerticalAlignment="Top" Width="126" Margin="285,197,0,0" Height="33"/>
-        <Button x:Name="ModSpecial" Content="Modifica Specializare" HorizontalAlignment="Left" VerticalAlignment="Top" Width="126" Margin="285,247,0,0" Height="33"/>
-        <Button x:Name="AddClasa" Content="Adauga Clasa" HorizontalAlignment="Left" VerticalAlignment="Top" Width="103" Margin="296,40,0,0" Height="33"/>
-        <Button x:Name="ModClasa" Content="Modifica Clasa" HorizontalAlignment="Left" VerticalAlignment="Top" Width="103" Margin="296,90,0,0" Height="33"/>
-        <Button x:Name="AddRol" Content="Adauga Rol" HorizontalAlignment="Left" VerticalAlignment="Top" Width="103" Margin="486,197,0,0" Height="33"/>
-        <Button x:Name="ModRol" Content="Modifica Rol" HorizontalAlignment="Left" VerticalAlignment="Top" Width="103" Margin="486,247,0,0" Height="33"/>
+        <Button x:Name="AddSpecialBt" Content="Adauga Specializare" HorizontalAlignment="Left" VerticalAlignment="Top" Width="126" Margin="285,186,0,0" Height="33" Click="AddSpecialBt_Click"/>
+        <Button x:Name="ModSpecialBt" Content="Modifica Specializare" HorizontalAlignment="Left" VerticalAlignment="Top" Width="126" Margin="285,236,0,0" Height="33"/>
+        <Button x:Name="AddClasaBt" Content="Adauga Clasa" HorizontalAlignment="Left" VerticalAlignment="Top" Width="103" Margin="296,40,0,0" Height="33" Click="AddClasaBt_Click"/>
+        <Button x:Name="ModClasaBt" Content="Modifica Clasa" HorizontalAlignment="Left" VerticalAlignment="Top" Width="103" Margin="296,90,0,0" Height="33"/>
+        <Button x:Name="AddRolBt" Content="Adauga Rol" HorizontalAlignment="Left" VerticalAlignment="Top" Width="103" Margin="486,186,0,0" Height="33" Click="AddRol_Click"/>
+        <Button x:Name="ModRolbt" Content="Modifica Rol" HorizontalAlignment="Left" VerticalAlignment="Top" Width="103" Margin="486,236,0,0" Height="33"/>
+        <Button x:Name="AddUserBt" Content="Adauga Utilizator" HorizontalAlignment="Left" VerticalAlignment="Top" Width="237" Margin="234,311,0,0" Height="33" Click="AddUserBt_Click"/>
+        <Button x:Name="ModUserBt" Content="Modifica Utilizator" HorizontalAlignment="Left" VerticalAlignment="Top" Width="237" Margin="234,361,0,0" Height="33"/>
 
     </Grid>
 </Window>

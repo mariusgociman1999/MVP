@@ -21,7 +21,6 @@ namespace School.Models
         public void AddClasa(Clasa clasa)
         {
             clasaDA.AddClasa(clasa);
-            Clase.Add(clasa);
         }
 
         public void ModClasa(Clasa clasa)
