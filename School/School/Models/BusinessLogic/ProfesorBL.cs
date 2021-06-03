@@ -7,7 +7,9 @@ using System.Threading.Tasks;
 namespace School.Models
 {
     class ProfesorBL
-    { 
+    {
+        public Profesor prof { get; set; }
+
         ProfesorDA profDA = new ProfesorDA();
 
         public Profesor GetProfesor(int persID)
@@ -20,7 +22,7 @@ namespace School.Models
             profDA.AddProf(prof);
         }
 
-        public void ModClasa(Profesor prof)
+        public void ModProf(Profesor prof)
         {
             profDA.ModProf(prof);
         }

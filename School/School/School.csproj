@@ -59,6 +59,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Converters\AbsentaConvert.cs" />
+    <Compile Include="Converters\ClasaConvert.cs" />
+    <Compile Include="Converters\ElevConvert.cs" />
+    <Compile Include="Converters\MaterieConvert.cs" />
+    <Compile Include="Converters\NotaConvert.cs" />
+    <Compile Include="Converters\ProfConvert.cs" />
+    <Compile Include="Converters\RolConvert.cs" />
+    <Compile Include="Converters\SpecialConvert.cs" />
+    <Compile Include="Converters\UserConvert.cs" />
     <Compile Include="Models\BusinessLogic\AbsentaBL.cs" />
     <Compile Include="Models\BusinessLogic\ClasaBL.cs" />
     <Compile Include="Models\BusinessLogic\ElevBL.cs" />
@@ -66,6 +75,7 @@
     <Compile Include="Models\BusinessLogic\MaterieBL.cs" />
     <Compile Include="Models\BusinessLogic\NotaBL.cs" />
     <Compile Include="Models\BusinessLogic\ProfesorBL.cs" />
+    <Compile Include="Models\BusinessLogic\ProfsBL.cs" />
     <Compile Include="Models\BusinessLogic\RolBL.cs" />
     <Compile Include="Models\BusinessLogic\SpecializareBL.cs" />
     <Compile Include="Models\BusinessLogic\UserBL.cs" />
@@ -77,6 +87,7 @@
     <Compile Include="Models\DataAccess\MaterieDA.cs" />
     <Compile Include="Models\DataAccess\NotaDA.cs" />
     <Compile Include="Models\DataAccess\ProfesorDA.cs" />
+    <Compile Include="Models\DataAccess\ProfsDA.cs" />
     <Compile Include="Models\DataAccess\Prof_ClaseDA.cs" />
     <Compile Include="Models\DataAccess\RolDA.cs" />
     <Compile Include="Models\DataAccess\SpecializareDA.cs" />
@@ -92,7 +103,20 @@
     <Compile Include="Models\Entities\Rol.cs" />
     <Compile Include="Models\Entities\Specializare.cs" />
     <Compile Include="Models\Entities\User.cs" />
+    <Compile Include="ViewModels\AbsentaVM.cs" />
     <Compile Include="ViewModels\Commands\RelayCommand.cs" />
+    <Compile Include="ViewModels\EleviVM.cs" />
+    <Compile Include="ViewModels\ElevVM.cs" />
+    <Compile Include="ViewModels\NotaVM.cs" />
+    <Compile Include="ViewModels\ProfesorVM.cs" />
+    <Compile Include="ViewModels\ProfsVM.cs" />
+    <Compile Include="ViewModels\UserVM.cs" />
+    <Compile Include="Views\AddAbsenta.xaml.cs">
+      <DependentUpon>AddAbsenta.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AddClasa.xaml.cs">
+      <DependentUpon>AddClasa.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\AddElev.xaml.cs">
       <DependentUpon>AddElev.xaml</DependentUpon>
     </Compile>
@@ -138,6 +162,14 @@
     <Compile Include="Views\Profesor.xaml.cs">
       <DependentUpon>Profesor.xaml</DependentUpon>
     </Compile>
+    <Page Include="Views\AddAbsenta.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AddClasa.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\AddRol.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

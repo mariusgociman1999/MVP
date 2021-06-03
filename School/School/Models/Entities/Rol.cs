@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace School.Models
 {
-    class Rol : BasePropertyChanged
+    public class Rol : BasePropertyChanged
     {
         private int _idRol;
 

@@ -16,8 +16,8 @@
         <Button x:Name="AddSubj" Content="Adauga Materie" HorizontalAlignment="Left" VerticalAlignment="Top" Width="103" Margin="95,197,0,0" Height="33"/>
         <Button x:Name="ModSubj" Content="Modifica Materie" HorizontalAlignment="Left" VerticalAlignment="Top" Width="103" Margin="95,247,0,0" Height="33"/>
 
-        <Button x:Name="AddSpecial" Content="Adauga Specilizare" HorizontalAlignment="Left" VerticalAlignment="Top" Width="126" Margin="285,197,0,0" Height="33"/>
-        <Button x:Name="ModSpecial" Content="Modifica Specilizare" HorizontalAlignment="Left" VerticalAlignment="Top" Width="126" Margin="285,247,0,0" Height="33"/>
+        <Button x:Name="AddSpecial" Content="Adauga Specializare" HorizontalAlignment="Left" VerticalAlignment="Top" Width="126" Margin="285,197,0,0" Height="33"/>
+        <Button x:Name="ModSpecial" Content="Modifica Specializare" HorizontalAlignment="Left" VerticalAlignment="Top" Width="126" Margin="285,247,0,0" Height="33"/>
         <Button x:Name="AddClasa" Content="Adauga Clasa" HorizontalAlignment="Left" VerticalAlignment="Top" Width="103" Margin="296,40,0,0" Height="33"/>
         <Button x:Name="ModClasa" Content="Modifica Clasa" HorizontalAlignment="Left" VerticalAlignment="Top" Width="103" Margin="296,90,0,0" Height="33"/>
         <Button x:Name="AddRol" Content="Adauga Rol" HorizontalAlignment="Left" VerticalAlignment="Top" Width="103" Margin="486,197,0,0" Height="33"/>

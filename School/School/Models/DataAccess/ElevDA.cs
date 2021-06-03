@@ -18,6 +18,9 @@ namespace School.Models
                 SqlCommand cmd = new SqlCommand("GetElevData", con);
                 Elev result = new Elev();
 
+                NotaDA note = new NotaDA();
+                AbsentaDA abs = new AbsentaDA();
+
                 SqlParameter persId = new SqlParameter("@persID", persID);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.Add(persId);
@@ -32,6 +35,8 @@ namespace School.Models
                     result.Prenume = reader.GetString(2);
                     result.IdElev = reader.GetInt32(3);
                     result.ClasaFrecv = new Clasa(reader.GetInt32(4), reader.GetString(5), new Specializare(reader.GetInt32(6), reader.GetString(7)));
+                    result.Note = note.GetNote(result.IdElev);
+                    result.Absente = abs.GetAbsenta(result.IdElev);
                 }
                 reader.Close();
                 return result;

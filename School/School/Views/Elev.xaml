@@ -17,9 +17,8 @@
         </DataGrid>
         <DataGrid x:Name="absenceGridElev" HorizontalAlignment="Left" Height="154" Margin="367,176,0,0" VerticalAlignment="Top" Width="300" IsReadOnly="True">
             <DataGrid.Columns>
-                <DataGridTextColumn Binding="{Binding}" Header="Absenta la" Width="100"/>
-                <DataGridTextColumn Binding="{Binding}" Header="Data" Width="100"/>
-                <DataGridTextColumn Binding="{Binding}" Header="Motivata" Width="100"/>
+                <DataGridTextColumn Binding="{Binding}" Header="Data" Width="150"/>
+                <DataGridTextColumn Binding="{Binding}" Header="Motivata" Width="150"/>
             </DataGrid.Columns>
         </DataGrid>
         <Label Content="Media:" HorizontalAlignment="Left" Margin="20,350,0,0" VerticalAlignment="Top" Width="69"/>

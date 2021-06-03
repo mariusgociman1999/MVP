@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace School.Models
 {
-    class BasePropertyChanged : INotifyPropertyChanged
+    public class BasePropertyChanged : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
         protected void NotifyPropertyChanged([CallerMemberName] string propertyName="")

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -30,8 +31,8 @@ namespace School.Models
             }
         }
 
-        private List<Nota> _note;
-        public List<Nota> Note 
+        private ObservableCollection<Nota> _note;
+        public ObservableCollection<Nota> Note 
         {
             get { return _note; }
             set
@@ -41,8 +42,8 @@ namespace School.Models
             }
         }
 
-        private List<Absenta> _absente;
-        public List<Absenta> Absente
+        private ObservableCollection<Absenta> _absente;
+        public ObservableCollection<Absenta> Absente
         {
             get { return _absente; }
             set

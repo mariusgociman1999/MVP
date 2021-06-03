@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace School.Models
 {
-    class Specializare : BasePropertyChanged
+    public class Specializare : BasePropertyChanged
     {
         private int _idSpecializare;
         public int IdSpecializare 

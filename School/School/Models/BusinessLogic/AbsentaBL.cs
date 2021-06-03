@@ -9,19 +9,13 @@ namespace School.Models
 {
     class AbsentaBL
     {
-        public ObservableCollection<Absenta> Absente { get; set; }
+        public Absenta Absenta { get; set; }
 
         AbsentaDA absenteDA = new AbsentaDA();
-
-        public ObservableCollection<Absenta> GetAbsente(int idElev)
-        {
-            return absenteDA.GetAbsenta(idElev);
-        }
 
         public void AddAbsenta(int idElev, Absenta absenta)
         {
             absenteDA.AddAbsenta(idElev, absenta);
-            Absente.Add(absenta);
         }
 
         public void ModAbsenta(int idElev, Absenta absenta)

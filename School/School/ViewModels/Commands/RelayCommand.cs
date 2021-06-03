@@ -11,6 +11,7 @@ namespace School.ViewModels
     {
         private Action<T> commandTask;
         private Predicate<T> canExecuteTask;
+        private object v;
 
         public RelayCommand(Action<T> workToDo)
             : this(workToDo, DefaultCanExecute)
@@ -22,6 +23,11 @@ namespace School.ViewModels
         {
             commandTask = workToDo;
             canExecuteTask = canExecute;
+        }
+
+        public RelayCommand(object v)
+        {
+            this.v = v;
         }
 
         private static bool DefaultCanExecute(T parameter)

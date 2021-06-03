@@ -9,6 +9,8 @@ namespace School.Models
 { 
     class ElevBL
     {
+        public Elev elev { get; set; }
+
         ElevDA elevDA = new ElevDA();
 
         public Elev GetElev(int persID)
@@ -16,12 +18,12 @@ namespace School.Models
             return elevDA.GetElev(persID);
         }
 
-        public void AddClasa(Elev elv)
+        public void AddElev(Elev elv)
         {
             elevDA.AddElev(elv);
         }
 
-        public void ModClasa(Elev elv)
+        public void ModElev(Elev elv)
         {
             elevDA.ModElev(elv);
         }

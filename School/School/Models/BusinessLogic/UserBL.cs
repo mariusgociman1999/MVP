@@ -18,7 +18,7 @@ namespace School.Models
             return usersDA.GetUsers();
         }
 
-        public void AddRol(User user)
+        public void AddUser(User user)
         {
             usersDA.AddUser(user);
             Users.Add(user);

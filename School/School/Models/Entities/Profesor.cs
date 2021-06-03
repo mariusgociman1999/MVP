@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace School.Models
 {
-    class Profesor : Persoana
+    public class Profesor : Persoana
     {
         private int _idProf;
         public int IdProf

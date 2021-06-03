@@ -9,21 +9,16 @@ namespace School.Models
 {
     class NotaBL
     {
-        public ObservableCollection<Nota> Note { get; set; }
+        public Nota nota { get; set; }
 
         NotaDA noteDA = new NotaDA();
-
-        public ObservableCollection<Nota> GetNote(int idElev)
-        {
-            return noteDA.GetNote(idElev);
-        }
 
         public void AddNota(int idElev, Nota nota)
         {
             noteDA.AddNota(idElev, nota);
         }
 
-        public void ModAbsenta(int idElev, Nota nota)
+        public void ModNota(int idElev, Nota nota)
         {
             noteDA.ModNota(idElev, nota);
         }

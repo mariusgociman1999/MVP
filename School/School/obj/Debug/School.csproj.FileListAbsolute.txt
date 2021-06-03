@@ -38,3 +38,8 @@ C:\Users\mariu\Desktop\Materiale\MVP\MVP\School\School\obj\Debug\Views\AddSubj.b
 C:\Users\mariu\Desktop\Materiale\MVP\MVP\School\School\obj\Debug\Views\ModElev.baml
 C:\Users\mariu\Desktop\Materiale\MVP\MVP\School\School\obj\Debug\Views\ModProf.baml
 C:\Users\mariu\Desktop\Materiale\MVP\MVP\School\School\obj\Debug\Views\AddRol.g.cs
+C:\Users\mariu\Desktop\Materiale\MVP\MVP\School\School\obj\Debug\Views\AddAbsenta.g.cs
+C:\Users\mariu\Desktop\Materiale\MVP\MVP\School\School\obj\Debug\Views\AddClasa.g.cs
+C:\Users\mariu\Desktop\Materiale\MVP\MVP\School\School\obj\Debug\Views\ModProfCombo.g.cs
+C:\Users\mariu\Desktop\Materiale\MVP\MVP\School\School\obj\Debug\Views\ModUser.g.cs
+C:\Users\mariu\Desktop\Materiale\MVP\MVP\School\School\obj\Debug\GeneratedInternalTypeHelper.g.cs
